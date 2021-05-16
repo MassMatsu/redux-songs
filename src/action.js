@@ -1,4 +1,4 @@
-import Redux from 'redux'
+//import Redux from 'react-redux'
 
 // action creators
 
@@ -37,18 +37,18 @@ const policies = (listOfPolicies = [], action) => {
   return listOfPolicies;
 };
 
-const {createStore, combineReducers} = Redux
+// const {createStore, combineReducers} = Redux
 
-const ourDepartments = combineReducers({
-  accounting: accounting,
-  claimsHistory: claimsHistory,
-  policies: policies
-})
+// const ourDepartments = combineReducers({
+//   accounting: accounting,
+//   claimsHistory: claimsHistory,
+//   policies: policies
+// })
 
-const store = createStore(ourDepartments)
+// const store = createStore(ourDepartments)
 
-store.dispatch(createPolicy('Alex', 20))
-store.dispatch(createPolicy('Dane', 30))
-store.dispatch(createPolicy('Mike', 25))
+// store.dispatch(createPolicy('Alex', 20))
+// store.dispatch(createPolicy('Dane', 30))
+// store.dispatch(createPolicy('Mike', 25))
 
 
